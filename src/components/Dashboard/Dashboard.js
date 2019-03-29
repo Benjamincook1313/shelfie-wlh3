@@ -10,9 +10,9 @@ class Dashboard extends Component {
     })
   }
 
-  editProduct=()=>{
+  editProduct=(product)=>{
     axios.put(`/api/product/${product.product_id}`).then(res => {
-      
+      this.props.get()
     })
   }
 
