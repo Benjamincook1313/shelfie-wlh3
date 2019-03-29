@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 class Product extends Component {
   render(){
+    const { product } = this.props
     return(
       <div className='product'>
         <img className='img' src={this.props.inventory.image_url} alt=''/>
@@ -10,8 +11,8 @@ class Product extends Component {
           <div>${this.props.inventory.price}</div>
         </div>  
         <div className='buttons' >
-          <button onClick={() => this.props.deleteProduct(this.props.product)}>Delete</button>
-          <button onClick={this.editProduct} >Edit</button>
+          <button onClick={() => this.props.deleteProduct(product)}>Delete</button>
+          <button onClick={this.props.editProduct} >Edit</button>
         </div>
       </div>
     )

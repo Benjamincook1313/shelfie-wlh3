@@ -19,6 +19,17 @@ module.exports = {
     .catch(err => console.log(err, 'Problem adding product'))
   },
 
+  updateProduct: (req, res) => {
+    const { id } = req.params
+    const { image_url, product_name, price}
+
+    req.app.get('db').update_product(id, image_url, product_name, price)
+      .then((res) => {
+        res.status(200).send('Product updated')
+      })
+      .catch(err => console.log(err, 'problem updating product'))
+  },
+
   deleteProduct: (req, res) => {
     const { id } = req.params
 

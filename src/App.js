@@ -9,7 +9,8 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      inventory: []
+      inventory: [],
+      editProduct: {}
     }
   }
 
@@ -31,7 +32,9 @@ class App extends Component {
           <Header />
         </header>
         <section style={{display: 'flex', justifyContent: 'space-around'}}>
-          <Dashboard inventory={inventory} get={this.componentDidMount}
+          <Dashboard 
+            inventory={inventory} 
+            get={this.componentDidMount}
           />
           <Form get={this.componentDidMount}/>
         </section>

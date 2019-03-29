@@ -33,8 +33,8 @@ class Form extends Component {
         productName: '',
         price: 0
       })
-      this.props.get()
     })
+    this.props.get()
   }
 
   render() {

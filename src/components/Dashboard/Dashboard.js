@@ -5,15 +5,21 @@ import axios from 'axios'
 class Dashboard extends Component {
 
   deleteProduct=(product)=>{
-    axios.delete(`/api/product/${product.id}`).then(res => {
+    axios.delete(`/api/product/${product.product_id}`).then(res => {
+      this.props.get()
+    })
+  }
+
+  editProduct=()=>{
+    axios.put(`/api/product/${product.product_id}`).then(res => {
       
     })
-    this.props.get()
   }
+
   render(){
     const displayInventory = this.props.inventory.map((product, i) => {
       return(
-        <div key={`${product.id}`}>
+        <div key={product.product_id}>
           <Product 
           inventory={this.props.inventory[i]} 
           deleteProduct={this.deleteProduct}

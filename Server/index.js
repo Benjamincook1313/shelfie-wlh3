@@ -16,6 +16,7 @@ massive(CONNECTION_STRING)
 
 app.get('/api/inventory', ctrl.getAll)
 app.post('/api/product', ctrl.createProduct)
+app.put('/api/product/:id', ctrl.updateProduct)
 app.delete('/api/product/:id', ctrl.deleteProduct)
 
 
