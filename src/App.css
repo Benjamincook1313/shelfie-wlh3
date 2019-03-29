@@ -23,11 +23,99 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #ab2a19
+}
+
+.icon {
+  position: absolute;
+  top: 25px; 
+  left: 75px;
+}
+
+h1 {
+  color: #fff; 
+  font-size: 30px; 
+  font-weight: 700; 
+  position: absolute; 
+  top: 35px; 
+  left: 150px; 
+  text-transform: uppercase;
+}
+
+.product {
+  position: relative;
+  right: 350px;
+  border-radius: 7px;
+  padding: 15px;
+  width: 450px;
+  background-color: #d34735;
+  margin: 50px;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  border-radius: 7px;
+  font-weight: 700;
+}
+button {
+  background-color: #3ad886;
+  border-radius: 7px;
+  height: 42px;
+}
+
+.form-button {
+  background-color: #ed6b5a;
+}
+.form-buttons {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  position: fixed;
+  right: 150px;
+  margin-top: 50px;
+  background-color: #3ad886;
+  border-radius: 7px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 450px;
+}
+
+.img {
+  padding: 0;
+  margin: 7px auto;
+  border: 1px solid black;
+  height: 200px;
+  width: 320px;
+  max-height: 200px;
+  max-width: 320px;
+  background-color: #fff;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
 }
